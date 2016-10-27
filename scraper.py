@@ -1,5 +1,4 @@
 #Author: Peter Swanson
-#Created for Ag for Hire
 
 import mechanize    #Mechanize for accessing forms and controls
 from BeautifulSoup import BeautifulSoup #BS for parsing HTML
@@ -44,9 +43,9 @@ def login(link): #To login to CalJOBS
 
     for control in browser.form.controls:
         if control.type == "text":
-            control.value = 'topazoo42'
+            control.value = 'your_username'
         elif control.type == "password":    #Enter login information
-            control.value = '1121Error!'
+            control.value = 'your_password'
 
     browser.submit() #Submit the form
 
